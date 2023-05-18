@@ -14,8 +14,7 @@ const About = () => {
         </div>
         <p className="text-xl mt-20">
           Hello World! I'm <b>Ajij Seikh</b> from West Bengal , a Full-Stack Web
-          Developer. From Back-end and front-end on a stage to lines of code on
-          a web page, I love combining the worlds of logic and creative design
+          Developer.I love combining the worlds of logic and creative design
           to make eye-catching, accessible, and user-friendly websites and
           applications.
         </p>
