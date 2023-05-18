@@ -6,7 +6,8 @@ import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import mysql from "../assets/mysql.png";
 import nodejs from "../assets/nodejs.png";
-import github from "../assets/github.png";
+
+
 import awss3 from "../assets/asws3.png";
 import mongodb from "../assets/mongodb.png";
 
@@ -60,12 +61,7 @@ const Experience = () => {
       title: "MongoDB",
       style: "shadow-gray-400",
     },
-    {
-      id: 8,
-      src: github,
-      title: "GitHub",
-      style: "shadow-gray-400",
-    },
+    
   ];
 
   return (
@@ -74,14 +70,14 @@ const Experience = () => {
       className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white ">
-        <div className="pb-15 mt-20 ">
-          <p className="text-4xl mt-20 font-bold border-b-4 border-gray-500 p-1 inline ">
+        <div>
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline ">
             Experience
           </p>
           <p className="py-6 ">These are the technologies I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center  px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8  px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
