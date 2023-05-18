@@ -27,9 +27,7 @@ const About = () => {
           completed couple of project's like E-commerce website, Book
           management, URL shortner, Open to intern, Bloging website and Hotel
           Booking website like that projects I have done. I am looking forward
-          to start my carrier as a Full-stack developer. Technology leads,
-          society follows. The move towards increasing inclusivity and diversity
-          in the industry through representation is of importance to me. I'm
+          to start my carrier as a Full-stack developer.I'm
           excited to make the leap and continue refining my skills with the
           right company.
         </p>
