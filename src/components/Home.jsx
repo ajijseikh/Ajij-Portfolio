@@ -12,14 +12,14 @@ const Home = () => {
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('Ajij Seikh resume.pdf').then(response => {
+    fetch('Resume_Ajij_Seikh.pdf').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'Ajij Seikh resume.pdf';
+            alink.download = 'Resume_Ajij_Seikh.pdf';
             alink.click();
         })
     })
@@ -41,10 +41,6 @@ const Home = () => {
           I'm<span style={{color:"black"}}>_</span>Ajij<span style={{color:"black"}}>_</span>Seikh<span style={{color:"black"}}>_</span>! 
           Full-Stack Web Developer ! 
           </h2>
-
-          {/* <h2 className="text-4xl sm:text-7xl font-bold text-white">
-           Full-Stack Web Developer ! 
-          </h2> */}
 
           <p className="text-gray-500 py-4 max-w-md">
             I have 1 year of experience building and desgining web application.
