@@ -4,7 +4,7 @@ const Contact = () => {
   const initialValue={name:"",email:"",message:""}
   const [initialFormValue,setinitialFormValue]=useState(initialValue);
   const [formErrors,setFormErrors]=useState({})
-  // const [isSubmit,setIsSubmit] = useState(false)
+  const [isSubmit,setIsSubmit] = useState(false)
 
   const handleChange = (e) => {
       const {name , value } =e.target;
@@ -15,7 +15,7 @@ const Contact = () => {
    const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(initialFormValue))
-    // setIsSubmit(true);
+    setIsSubmit(true);
    }
   //  useEffect (() =>{
    
@@ -48,6 +48,7 @@ const Contact = () => {
       className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
       
+      
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -55,6 +56,12 @@ const Contact = () => {
           </p>
           <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
+         
+        {Object.keys(formErrors).length === 0 && isSubmit ? (
+        <div className="ui message success">Thank you for contact me</div>
+      ) : (
+       <p></p>
+      )}
 
         <div className=" flex justify-center items-center">
           <form
