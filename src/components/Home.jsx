@@ -12,14 +12,14 @@ const Home = () => {
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('Resume_Ajij_Seikh.pdf').then(response => {
+    fetch('AJIJ_SEIKH__RESUME.pdf').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'Resume_Ajij_Seikh.pdf';
+            alink.download = 'AJIJ_SEIKH__RESUME.pdf';
             alink.click();
         })
     })

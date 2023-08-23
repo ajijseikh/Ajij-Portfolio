@@ -16,6 +16,8 @@ const Contact = () => {
     e.preventDefault();
     setFormErrors(validate(initialFormValue))
     setIsSubmit(true);
+
+   
    }
   //  useEffect (() =>{
    
@@ -57,17 +59,21 @@ const Contact = () => {
           <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
          
+       
+
+        <div className=" flex justify-center items-center">
+
         {Object.keys(formErrors).length === 0 && isSubmit ? (
         <div className="ui message success">Thank you for contact me</div>
       ) : (
        <p></p>
       )}
-
-        <div className=" flex justify-center items-center">
           <form
-           onSubmit={handleSubmit}
+          
+          onSubmit={handleSubmit}
             action="https://getform.io/f/ebdcf5a0-6f56-4576-b0bf-7a0ec10ae142"
             method="POST"
+          
             className=" flex flex-col w-full md:w-1/2"
           >
             <p className="text-red-800 font-bold">{formErrors.name}</p>

@@ -6,9 +6,10 @@ import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import mysql from "../assets/mysql.png";
 import nodejs from "../assets/nodejs.png";
+import reactNative from '../assets/OIP (2).jpg'
 
 
-import awss3 from "../assets/asws3.png";
+import aws from "../assets/OIP (1).jpg";
 import mongodb from "../assets/mongodb.png";
 
 const Experience = () => {
@@ -39,8 +40,8 @@ const Experience = () => {
     },
     {
       id: 5,
-      src: awss3,
-      title: "AWS S3",
+      src: aws,
+      title: "AWS",
       style: "shadow-sky-400",
     },
     {
@@ -59,6 +60,12 @@ const Experience = () => {
       id: 8,
       src: mongodb,
       title: "MongoDB",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 9,
+      src: reactNative,
+      title: "React Native",
       style: "shadow-gray-400",
     },
     
