@@ -6,7 +6,7 @@ import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import mysql from "../assets/mysql.png";
 import nodejs from "../assets/nodejs.png";
-import reactNative from '../assets/OIP (2).jpg'
+
 
 
 import aws from "../assets/OIP (1).jpg";
@@ -62,12 +62,7 @@ const Experience = () => {
       title: "MongoDB",
       style: "shadow-gray-400",
     },
-    {
-      id: 9,
-      src: reactNative,
-      title: "React Native",
-      style: "shadow-gray-400",
-    },
+    
     
   ];
 
